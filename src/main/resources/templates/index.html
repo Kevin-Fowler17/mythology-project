@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:insert="partial/partials :: head">
+    <meta charset="UTF-8">
+    <title id="pageTitle">Out of Milk</title>
+</head>
+<body>
+<nav th:insert="partial/partials :: navbar"></nav>
+<div class="px-4 py-5 my-5 text-center">
+    <div class="d-flex justify-content-center">
+        <img class="d-block mx-auto mb-4 rounded-circle" th:src="@{/img/cooking people2.jpeg}" alt="" style="width:20em;height:20em;">
+        <img class="d-block mx-auto mb-4 rounded-circle d-none d-md-block" th:src="@{/img/shoppingbasket.jpg}" alt="" style="width:20em;height:20em;">
+        <img class="d-block mx-auto mb-4 rounded-circle d-none d-lg-block" th:src="@{/img/pan.webp}" alt="" style="width:20em;height:20em;">
+    </div>
+    <h1 class="display-5 fw-bold">OUT OF MILK</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">One stop shop grocery list</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a type="button" class="btn btn-lg px-4 gap-3" th:href="@{/sign-up}" style="background-color: #E85A4F;color:#FFF">Register Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Why Choose Us</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+        <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div>
+                <h2>Search for Recipes</h2>
+                <p>Discover a treasure trove of over 200 tantalizing recipes at your fingertips! Explore our extensive catalog by searching for your favorite recipe names or by diving into the world of flavors with our wide range of main ingredients. Unleash your culinary creativity and let our catalog be your guide to culinary delights!</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <button class="btn"><i class="fa-solid fa-carrot"></i></button>
+            </div>
+            <div>
+                <h2>Grab Ingredients</h2>
+                <p>Enter the future of meal planning with our recipe-to-grocery list feature. Effortlessly generate comprehensive lists with a single click, saving time and ensuring your kitchen is always stocked!</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <button class="btn"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div>
+                <h2>Recipes Catered to You</h2>
+                <p>Our advanced algorithm analyzes your past likes and dislikes, creating a personalized culinary experience like no other. Whether you're a health enthusiast, an adventurous foodie, or simply seeking comfort in familiar flavors, our system curates a handpicked selection of recipes that match your unique taste preferences.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <button class="btn"><i class="fa-solid fa-list"></i></button>
+            </div>
+            <div>
+                <h2>Compare Pantry and Grocery Lists</h2>
+                <p>Our application effortlessly compares your grocery list to the items you already have in your pantry, fridge, and kitchen cabinets. No more purchasing unnecessary ingredients or forgetting essential items. By telling you exactly what you need to buy and what you already have in stock, take control of your kitchen inventory and simplify your grocery routine using our app!.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 text-center">
+            <h1 class="display-4 fw-bold lh-1">Meet the Team</h1>
+            <p class="lead">Want to know more about Out of Milk and it's wonderful creators? Click below to find out more.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
+                <a type="button" class="btn btn-lg px-4 me-md-2 fw-bold" style="background-color: #E85A4F; color: #FFFFFF" th:href="@{/AboutUs}">About Us</a>
+            </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+            <img class="rounded-lg-3" th:src="@{/img/veggies.jpg}" alt="" style="width:25rem">
+        </div>
+    </div>
+</div>
+
+<div class="px-3 py-4 my-4 text-center">
+    <h1 class="display-5 fw-bold">Check Out Some of Our Recipes</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">We have a catalogue of more than two hundred recipes. Register now to search through them all!</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a type="button" class="btn btn-lg px-4 gap-3" th:href="@{/sign-up}" style="background-color: #E85A4F;color:#FFF">Register Now</a>
+        </div>
+    </div>
+</div>
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel" >
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div th:each="recipe : ${finalRecipes}" th:class="${recipe.showThis} ? 'carousel-item active' : 'carousel-item'">
+<!--            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>-->
+            <a sec:authorize="!isAuthenticated()" th:href="@{'/login/'} + ${recipe.getIdMeal()}">
+                <img alt="..." class="d-block w-100 carousel-image" th:src="${recipe.getStrMealThumb()}">
+            </a>
+            <a sec:authorize="isAuthenticated()" th:href="@{'/recipe/'} + ${recipe.getIdMeal()}">
+                <img alt="..." class="d-block w-100 carousel-image" th:src="${recipe.getStrMealThumb()}">
+            </a>
+<!--            <img alt="..." class="" width="100%" height="100%" >-->
+            <div class="container">
+<!--                <div class="carousel-caption" >-->
+<!--                    <h1 th:text="${recipe.getStrMeal()}" class="capitalize btn p-3 mb-2 bg-secondary text-white rounded-pill opacity-75 h-50 d-inline-block fs-3">Example headline.</h1>-->
+<!--                </div>-->
+                <a sec:authorize="!isAuthenticated()" th:href="@{'/login/'} + ${recipe.getIdMeal()}">
+                    <div class="carousel-caption" >
+                        <h1 th:text="${recipe.getStrMeal()}" class="capitalize btn p-3 mb-2 bg-secondary text-white rounded-pill opacity-75 h-50 d-inline-block fs-3">Example headline.</h1>
+                    </div>
+                </a>
+                <a sec:authorize="isAuthenticated()" th:href="@{'/recipe/'} + ${recipe.getIdMeal()}">
+                    <div class="carousel-caption" >
+                        <h1 th:text="${recipe.getStrMeal()}" class="capitalize btn p-3 mb-2 bg-secondary text-white rounded-pill opacity-75 h-50 d-inline-block fs-3">Example headline.</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<footer th:insert="partial/partials :: footer"></footer>
+</body>
+</html>
