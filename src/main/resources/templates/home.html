@@ -2,44 +2,49 @@
 <html lang="en">
 <head>
   <header th:insert="partials/partials :: header" />
-  <title>Survey Results</title>
+  <title>Mythology</title>
 </head>
 <body>
 
 <nav th:replace="partials/partials :: navbar" />
 
-<h1>Home Page</h1>
-
 <div class="container px-4 py-5" id="hanging-icons">
-  <h2 class="pb-2 border-bottom">Why Choose Us</h2>
-  <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
-    <div class="col d-flex align-items-start">
-      <div>
-        <h2>Search for Recipes</h2>
-        <img class="d-block mx-auto mb-4 rounded-circle d-none d-md-block" th:src="@{/img/Zeus.png}" alt="" style="width:20em;height:20em;">
+  <h2 class="pb-2 border-bottom text-center">Which subject are you interested in ...</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+    <div class="col d-flex justify-content-center">
+      <div class="text-center">
+        <a class="nav-link active" th:href="@{/glossary}">
+          <img class="img-fluid rounded-circle mb-4" th:src="@{/img/Zeus.png}" alt="Greek" style="max-width: 14em; height: auto;">
+          <h2>Greek</h2>
+        </a>
       </div>
     </div>
-    <div class="col d-flex align-items-start">
-      <div>
-        <h2>Grab Ingredients</h2>
-        <img class="d-block mx-auto mb-4 rounded-circle d-none d-md-block" th:src="@{/img/Odin.png}" alt="" style="width:20em;height:20em;">
+    <div class="col d-flex justify-content-center">
+      <div class="text-center">
+        <a class="nav-link active" th:href="@{/glossary}">
+          <img class="img-fluid rounded-circle mb-4" th:src="@{/img/Ra.png}" alt="Egyptian" style="max-width: 14em; height: auto;">
+          <h2>Egyptian</h2>
+        </a>
       </div>
     </div>
-    <div class="col d-flex align-items-start">
-      <div>
-        <h2>Recipes Catered to You</h2>
-        <img class="d-block mx-auto mb-4 rounded-circle d-none d-md-block" th:src="@{/img/Ra.png}" alt="" style="width:20em;height:20em;">
+    <div class="col d-flex justify-content-center">
+      <div class="text-center">
+        <a class="nav-link active" th:href="@{/glossary}">
+          <img class="img-fluid rounded-circle mb-4" th:src="@{/img/Odin.png}" alt="Norse" style="max-width: 14em; height: auto;">
+          <h2>Norse</h2>
+        </a>
       </div>
     </div>
-    <div class="col d-flex align-items-start">
-      <div>
-        <h2>Compare Pantry and Grocery Lists</h2>
-        <img class="d-block mx-auto mb-4 rounded-circle d-none d-md-block" th:src="@{/img/Jupiter.png}" alt="" style="width:20em;height:20em;">
+    <div class="col d-flex justify-content-center">
+      <div class="text-center">
+        <a class="nav-link active" th:href="@{/glossary}">
+          <img class="img-fluid rounded-circle mb-4" th:src="@{/img/Jupiter.png}" alt="Roman" style="max-width: 14em; height: auto;">
+          <h2>Roman</h2>
+        </a>
       </div>
     </div>
   </div>
 </div>
-
 
 <footer th:replace="partials/partials.html :: footer" />
 
