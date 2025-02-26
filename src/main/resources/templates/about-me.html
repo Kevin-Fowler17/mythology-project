@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <header th:insert="partials/partials :: header" />
+    <title>About Me</title>
+</head>
+<body>
+
+<nav th:replace="partials/partials :: navbar" />
+
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-5 py-5">
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">About Project Name</h1>
+            <p class="lead">Project description goes here</p>
+        </div>
+    </div>
+</div>
+<div class="row row-cols-1 row-cols-md-2 g-4 mx-4">
+    <div class="col d-flex align-items-stretch">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 pt-5">
+                    <img class="card-img-top" th:src="@{/img/kevin.jpg}" alt="">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Kevin Fowler</h5>
+                        <p class="card-text text-start">As a self-motivated software developer, I have a keen eye for detail and a track record of delivering high-quality results on numerous projects. I possess a unique ability to balance my technical skills with strong interpersonal abilities, making me a valuable asset in cross-functional teams. My knack for fast and efficient problem-solving allows me to consistently deliver results in a timely manner.</p>
+                        <div class="card-text">
+                            <a href="https://github.com/mcampbell379" style="color:#E98074"><i class="fa-brands fa-github fa-lg" style="margin: 0% 2%;"></i></a>
+                            <a href="https://www.linkedin.com/in/mitchelldcampbell/" style="color: #E98074"><i class="fa-brands fa-linkedin fa-lg" style="margin: 0% 2%;"></i></a>
+                            <a href="" style="color: #E98074"><i class="fa-solid fa-graduation-cap fa-lg" style="margin: 0% 2%;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer th:replace="partials/partials.html :: footer" />
+
+</body>
+</html>

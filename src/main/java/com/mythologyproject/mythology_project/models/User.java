@@ -1,0 +1,45 @@
+package com.mythologyproject.mythology_project.models;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.util.List;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
+@Entity
+@Table(name="users")
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(columnDefinition = "INT(10) UNSIGNED")
+    private long id;
+
+    @Column(nullable = false)
+    private String username;
+
+    @Column(nullable = false)
+    private String email;
+
+    @Column(nullable = false, length = 100)
+    private String password;
+
+    @OneToOne(mappedBy = "user")
+    private Insurance insurance;
+
+    @OneToMany(mappedBy = "user")
+    private List<Doctor> doctors;
+
+    @OneToMany(mappedBy = "user")
+    private List<Prescription> prescriptions;
+
+    public User(User copy) {
+        id = copy.id;
+        username = copy.username;
+        email = copy.email;
+        password = copy.password;
+    }
+}
