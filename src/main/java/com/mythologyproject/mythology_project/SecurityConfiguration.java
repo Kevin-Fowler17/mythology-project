@@ -34,7 +34,7 @@ public class SecurityConfiguration {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(csrf -> csrf.disable()) // Disable CSRF if needed for testing (not recommended for production)
+//                .csrf(csrf -> csrf.enable()) // Disable CSRF if testing, enable in production
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/", "/glossary", "/subject-card", "/register", "/about-me", "/audio/**", "/css/**", "/img/**", "/js/**").permitAll()
                         .requestMatchers("/user", "/user/{id}/quiz").authenticated()
