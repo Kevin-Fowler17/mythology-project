@@ -1,6 +1,6 @@
 package com.mythologyproject.mythology_project.repositories;
 
-import net.askkevin.askkevin.models.User;
+import com.mythologyproject.mythology_project.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

@@ -1,9 +1,8 @@
 package com.mythologyproject.mythology_project.services;
 
-
-import net.askkevin.askkevin.models.User;
-import net.askkevin.askkevin.models.UserWithRoles;
-import net.askkevin.askkevin.repositories.UserRepository;
+import com.mythologyproject.mythology_project.models.User;
+import com.mythologyproject.mythology_project.models.UserWithRoles;
+import com.mythologyproject.mythology_project.repositories.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

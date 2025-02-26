@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class GlossaryController {
 
-    @GetMapping("/about-me")
+    @GetMapping("/glossary")
     public String showAboutForm(){
-        return "about-me";
+        return "glossary";
     }
 
 }

@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class SubjectCardController {
 
-    @GetMapping("/about-me")
+    @GetMapping("/subject-card")
     public String showAboutForm(){
-        return "about-me";
+        return "subject-card";
     }
 
 }
