@@ -8,7 +8,23 @@
 
 <nav th:replace="partials/partials :: navbar" />
 
-<h1>Glossary Page</h1>
+  <div class="card">
+    <div class="card-header">
+      <h2>John Doe</h2>
+      <p>Zeus - Greeks</p>
+    </div>
+    <img src="../static/img/Zeus.png" alt="Player Image" class="card-image">
+    <div class="card-body">
+      <h3>Season Stats</h3>
+      <ul>
+        <li><span>ERA:</span> 2.85</li>
+        <li><span>Strikeouts:</span> 150</li>
+        <li><span>Wins:</span> 12</li>
+        <li><span>Losses:</span> 4</li>
+      </ul>
+    </div>
+    <div class="card-footer">Limited Edition</div>
+  </div>
 
 <footer th:replace="partials/partials.html :: footer" />
 

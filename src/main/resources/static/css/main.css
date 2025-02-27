@@ -20,3 +20,75 @@ body {
     margin-left: calc(2em + 0.25rem + 1.5rem);
 }
 /* End for password validation */
+
+/* Used for baseball card design on glossary page *//* General Styles */
+/*body {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    min-height: 100vh;*/
+/*    background-color: #16a34a; !* Green background *!*/
+/*    margin: 0;*/
+/*}*/
+
+.card {
+    width: 320px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 4px solid #ef4444; /* Red border */
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #2563eb; /* Blue background */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-header h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-header p {
+    font-size: 0.875rem;
+}
+
+.card-image {
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.card-body h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-body ul {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.card-body li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.card-footer {
+    background-color: #ef4444; /* Red background */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+/* End for baseball card design on glossary page */
