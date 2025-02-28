@@ -8,23 +8,99 @@
 
 <nav th:replace="partials/partials :: navbar" />
 
-  <div class="card">
-    <div class="card-header">
-      <h2>John Doe</h2>
-      <p>Zeus - Greeks</p>
+<div class="container px-4 pt-4 pb-5" id="mythology-cards">
+  <div class="row g-4 py-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+
+    <div class="col d-flex justify-content-center">
+      <div class="text-center">
+        <div class="card">
+          <div class="card-header">
+            <h2>Zeus</h2>
+            <p>God - Greek</p>
+          </div>
+          <img class="card-image" th:src="@{/img/Zeus.png}" alt="Zeus Image" style="max-width: 14em; height: auto;">
+          <div class="card-body">
+            <h3>Season Stats</h3>
+            <ul>
+              <li><span>ERA:</span> 2.85</li>
+              <li><span>Strikeouts:</span> 150</li>
+              <li><span>Wins:</span> 12</li>
+              <li><span>Losses:</span> 4</li>
+            </ul>
+          </div>
+          <div class="card-footer">Limited Edition</div>
+        </div>
+      </div>
     </div>
-    <img src="../static/img/Zeus.png" alt="Player Image" class="card-image">
-    <div class="card-body">
-      <h3>Season Stats</h3>
-      <ul>
-        <li><span>ERA:</span> 2.85</li>
-        <li><span>Strikeouts:</span> 150</li>
-        <li><span>Wins:</span> 12</li>
-        <li><span>Losses:</span> 4</li>
-      </ul>
+
+    <div class="col d-flex justify-content-center">
+      <div class="text-center">
+        <div class="card">
+          <div class="card-header">
+            <h2>Odin</h2>
+            <p>God - Norse</p>
+          </div>
+          <img class="card-image" th:src="@{/img/Odin.png}" alt="Odin Image" style="max-width: 14em; height: auto;">
+          <div class="card-body">
+            <h3>Season Stats</h3>
+            <ul>
+              <li><span>ERA:</span> 2.85</li>
+              <li><span>Strikeouts:</span> 150</li>
+              <li><span>Wins:</span> 12</li>
+              <li><span>Losses:</span> 4</li>
+            </ul>
+          </div>
+          <div class="card-footer">Limited Edition</div>
+        </div>
+      </div>
     </div>
-    <div class="card-footer">Limited Edition</div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="text-center">
+        <div class="card">
+          <div class="card-header">
+            <h2>Ra</h2>
+            <p>God - Egpytian</p>
+          </div>
+          <img class="card-image" th:src="@{/img/Ra.png}" alt="Ra Image" style="max-width: 14em; height: auto;">
+          <div class="card-body">
+            <h3>Season Stats</h3>
+            <ul>
+              <li><span>ERA:</span> 2.85</li>
+              <li><span>Strikeouts:</span> 150</li>
+              <li><span>Wins:</span> 12</li>
+              <li><span>Losses:</span> 4</li>
+            </ul>
+          </div>
+          <div class="card-footer">Limited Edition</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="text-center">
+        <div class="card">
+          <div class="card-header">
+            <h2>Jupiter</h2>
+            <p>God - Roman</p>
+          </div>
+          <img class="card-image" th:src="@{/img/Jupiter.png}" alt="Jupiter Image" style="max-width: 14em; height: auto;">
+          <div class="card-body">
+            <h3>Season Stats</h3>
+            <ul>
+              <li><span>ERA:</span> 2.85</li>
+              <li><span>Strikeouts:</span> 150</li>
+              <li><span>Wins:</span> 12</li>
+              <li><span>Losses:</span> 4</li>
+            </ul>
+          </div>
+          <div class="card-footer">Limited Edition</div>
+        </div>
+      </div>
+    </div>
+
   </div>
+</div>
 
 <footer th:replace="partials/partials.html :: footer" />
 

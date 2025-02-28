@@ -22,15 +22,6 @@ body {
 /* End for password validation */
 
 /* Used for baseball card design on glossary page *//* General Styles */
-/*body {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    min-height: 100vh;*/
-/*    background-color: #16a34a; !* Green background *!*/
-/*    margin: 0;*/
-/*}*/
-
 .card {
     width: 320px;
     background-color: white;

@@ -8,41 +8,52 @@
 
 <nav th:replace="partials/partials :: navbar" />
 
-<div class="container px-4 py-5" id="hanging-icons">
+<div class="container mt-4" id="mythology-logo">
+  <div class="d-flex justify-content-center align-items-center">
+    <img class="img-fluid rounded border-0 mb-4" th:src="@{/img/Zeus Odin Jupiter RA.png}" alt="Gods Image" style="max-width: 20em; height: auto;">
+  </div>
+</div>
+
+<div class="container px-4 pt-4 pb-5" id="mythology-icons">
   <h2 class="pb-2 border-bottom text-center">Which subject are you interested in ...</h2>
-  <div class="row g-4 py-5 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+  <div class="row g-4 py-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+
     <div class="col d-flex justify-content-center">
       <div class="text-center">
         <a class="nav-link active" th:href="@{/glossary}">
-          <img class="img-fluid rounded-circle mb-4" th:src="@{/img/Zeus.png}" alt="Greek" style="max-width: 14em; height: auto;">
+          <img class="img-fluid rounded-circle mb-4" th:src="@{/img/Zeus.png}" alt="Zeus Image" style="max-width: 14em; height: auto;">
           <h2>Greek</h2>
         </a>
       </div>
     </div>
+
     <div class="col d-flex justify-content-center">
       <div class="text-center">
         <a class="nav-link active" th:href="@{/glossary}">
-          <img class="img-fluid rounded-circle mb-4" th:src="@{/img/Ra.png}" alt="Egyptian" style="max-width: 14em; height: auto;">
-          <h2>Egyptian</h2>
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex justify-content-center">
-      <div class="text-center">
-        <a class="nav-link active" th:href="@{/glossary}">
-          <img class="img-fluid rounded-circle mb-4" th:src="@{/img/Odin.png}" alt="Norse" style="max-width: 14em; height: auto;">
+          <img class="img-fluid rounded-circle mb-4" th:src="@{/img/Odin.png}" alt="Odin Image" style="max-width: 14em; height: auto;">
           <h2>Norse</h2>
         </a>
       </div>
     </div>
+
     <div class="col d-flex justify-content-center">
       <div class="text-center">
         <a class="nav-link active" th:href="@{/glossary}">
-          <img class="img-fluid rounded-circle mb-4" th:src="@{/img/Jupiter.png}" alt="Roman" style="max-width: 14em; height: auto;">
+          <img class="img-fluid rounded-circle mb-4" th:src="@{/img/Ra.png}" alt="Ra Image" style="max-width: 14em; height: auto;">
+          <h2>Egyptian</h2>
+        </a>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="text-center">
+        <a class="nav-link active" th:href="@{/glossary}">
+          <img class="img-fluid rounded-circle mb-4" th:src="@{/img/Jupiter.png}" alt="Jupiter Image" style="max-width: 14em; height: auto;">
           <h2>Roman</h2>
         </a>
       </div>
     </div>
+
   </div>
 </div>
 
