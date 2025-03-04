@@ -23,12 +23,21 @@ public class Characters {
     private String name;
 
     @ManyToOne
-    @JoinColumn(name = "idCharacterType", referencedColumnName = "id", nullable = false)
+    @JoinColumn(name = "character_type_id", referencedColumnName = "id", nullable = false)
     private CharacterType characterType;
 
     @ManyToOne
-    @JoinColumn(name = "idMythologyOrigin", referencedColumnName = "id", nullable = false)
+    @JoinColumn(name = "mythology_origin_id", referencedColumnName = "id", nullable = false)
     private MythologyOrigin mythologyOrigin;
+
+    @ManyToMany
+    @JoinTable(
+            name = "antagonists",
+            joinColumns = @JoinColumn(name = "character_id"),
+            inverseJoinColumns = @JoinColumn(name = "antagonist_id")
+    )
+    @ToString.Exclude
+    private List<Characters> antagonists;
 
     @Column(nullable = false, columnDefinition = "TEXT")
     private String description;
