@@ -2,7 +2,6 @@ package com.mythologyproject.mythology_project.models;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.yaml.snakeyaml.events.Event;
 
 import java.util.List;
 
@@ -23,15 +22,6 @@ public class Characters {
     @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false, columnDefinition = "INT(10)")
-    private long idCharacterType;
-
-    @Column(nullable = false, columnDefinition = "INT(10)")
-    private long idMythologyOrigin;
-
-    @Column(nullable = false, columnDefinition = "TEXT")
-    private String description;
-
     @ManyToOne
     @JoinColumn(name = "idCharacterType", referencedColumnName = "id", nullable = false)
     private CharacterType characterType;
@@ -39,5 +29,8 @@ public class Characters {
     @ManyToOne
     @JoinColumn(name = "idMythologyOrigin", referencedColumnName = "id", nullable = false)
     private MythologyOrigin mythologyOrigin;
+
+    @Column(nullable = false, columnDefinition = "TEXT")
+    private String description;
 
 }
