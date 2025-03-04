@@ -24,6 +24,6 @@ public class FunFacts {
     private Characters character;
 
     @Column(nullable = false)
-    private String fact;
+    private String name;
 
 }

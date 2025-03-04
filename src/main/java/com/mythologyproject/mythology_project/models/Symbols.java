@@ -24,6 +24,6 @@ public class Symbols {
     private Characters character;
 
     @Column(nullable = false)
-    private String symbol;
+    private String name;
 
 }

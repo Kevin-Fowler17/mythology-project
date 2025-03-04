@@ -18,6 +18,6 @@ public class MythologyOrigin {
     private long id;
 
     @Column(nullable = false, unique = true)
-    private String label;
+    private String name;
 
 }

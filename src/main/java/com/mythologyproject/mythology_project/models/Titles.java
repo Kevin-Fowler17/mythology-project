@@ -24,6 +24,6 @@ public class Titles {
     private Characters character;
 
     @Column(nullable = false)
-    private String title;
+    private String name;
 
 }
