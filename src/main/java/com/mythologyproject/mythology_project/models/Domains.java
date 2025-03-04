@@ -13,4 +13,18 @@ import java.util.List;
 @Entity
 @Table(name = "domains")
 public class Domains {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(columnDefinition = "INT(10) UNSIGNED")
+    private long id;
+
+    @ManyToOne
+    @JoinColumn(name = "character_id", nullable = false)
+    private Characters character;
+
+    @ManyToOne
+    @JoinColumn(name = "domain_name_id", nullable = false)
+    private DomainName Name;
+
 }

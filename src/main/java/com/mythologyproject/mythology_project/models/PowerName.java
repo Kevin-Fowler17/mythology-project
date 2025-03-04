@@ -19,4 +19,5 @@ public class PowerName {
 
     @Column(nullable = false, unique = true)
     private String label;
+
 }

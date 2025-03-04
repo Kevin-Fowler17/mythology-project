@@ -19,4 +19,5 @@ public class MythologyOrigin {
 
     @Column(nullable = false, unique = true)
     private String label;
+
 }

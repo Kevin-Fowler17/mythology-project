@@ -13,4 +13,17 @@ import java.util.List;
 @Entity
 @Table(name = "titles")
 public class Titles {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(columnDefinition = "INT(10) UNSIGNED")
+    private long id;
+
+    @ManyToOne
+    @JoinColumn(name = "character_id", nullable = false)
+    private Characters character;
+
+    @Column(nullable = false)
+    private String title;
+
 }

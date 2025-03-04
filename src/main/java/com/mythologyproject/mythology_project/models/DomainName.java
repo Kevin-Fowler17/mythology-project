@@ -9,8 +9,8 @@ import lombok.*;
 @Setter
 @ToString
 @Entity
-@Table(name = "power_types")
-public class PowerType {
+@Table(name = "domain_names")
+public class DomainName {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
