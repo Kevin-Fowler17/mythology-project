@@ -22,6 +22,28 @@ public class GlossaryController {
 
         model.addAttribute("characters", characters);
 
+        characters.forEach(character -> {
+            System.out.println("*****************");
+            if (character.getAntagonists() != null) {
+                System.out.println(character.getAntagonists());
+            } else {
+                System.out.println("No antagonists found.");
+            }
+            System.out.println("*****************");
+        });
+
+        characters.forEach(character -> {
+            System.out.println("+++++++++++++++++");
+            System.out.println("Character: " + character.getName());
+            System.out.println("Antagonists: " + (character.getAntagonists() == null ? "None" : character.getAntagonists()));
+            System.out.println("+++++++++++++++++");
+
+        });
+
+
+
+//        System.out.println(characters);
+
         return "glossary";
 
     }

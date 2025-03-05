@@ -23,6 +23,10 @@ public class FamilyRelation {
 
     @ManyToOne
     @JoinColumn(name = "related_character_id", nullable = false)
+    private Character relatedCharacter;
+
+    @ManyToOne
+    @JoinColumn(name = "family_relation_type_id", nullable = false)
     private FamilyRelationType familyRelationType;
 
 }
