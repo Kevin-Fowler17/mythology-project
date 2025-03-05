@@ -37,10 +37,18 @@ public class GlossaryController {
             System.out.println("Character: " + character.getName());
             System.out.println("Antagonists: " + (character.getAntagonists() == null ? "None" : character.getAntagonists()));
             System.out.println("+++++++++++++++++");
-
         });
 
-
+        characters.forEach(character -> {
+            System.out.println("Character: " + character.getName());
+            if (character.getAntagonists() != null) {
+                character.getAntagonists().forEach(antagonist ->
+                        System.out.println("Antagonist: " + antagonist.getName())
+                );
+            } else {
+                System.out.println("No antagonists for this character");
+            }
+        });
 
 //        System.out.println(characters);
 
