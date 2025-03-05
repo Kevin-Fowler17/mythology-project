@@ -12,7 +12,7 @@ import java.util.List;
 @ToString
 @Entity
 @Table(name = "characters")
-public class Characters {
+public class Character {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,35 +35,35 @@ public class Characters {
 
     @OneToMany(mappedBy = "character")
     @ToString.Exclude
-    private List<Titles> titles;
+    private List<Title> titles;
 
     @OneToMany(mappedBy = "character")
     @ToString.Exclude
-    private List<FamilyRelations> familyRelations;
+    private List<FamilyRelation> familyRelations;
 
     @OneToMany(mappedBy = "character")
     @ToString.Exclude
-    private List<Domains> domains;
+    private List<Domain> domains;
 
     @OneToMany(mappedBy = "character")
     @ToString.Exclude
-    private List<Symbols> symbols;
+    private List<Symbol> symbols;
 
     @OneToMany(mappedBy = "character")
     @ToString.Exclude
-    private List<Powers> powers;
+    private List<Power> powers;
 
     @OneToMany(mappedBy = "character")
     @ToString.Exclude
-    private List<KeyTraits> keyTraits;
+    private List<KeyTrait> keyTraits;
 
     @OneToMany(mappedBy = "character")
     @ToString.Exclude
-    private List<Myths> myths;
+    private List<Myth> myths;
 
     @OneToMany(mappedBy = "character")
     @ToString.Exclude
-    private List<FunFacts> funFacts;
+    private List<FunFact> funFacts;
 
     @ManyToMany
     @JoinTable(
@@ -72,6 +72,6 @@ public class Characters {
             inverseJoinColumns = @JoinColumn(name = "antagonist_id")
     )
     @ToString.Exclude
-    private List<Characters> antagonists;
+    private List<Character> antagonists;
 
 }

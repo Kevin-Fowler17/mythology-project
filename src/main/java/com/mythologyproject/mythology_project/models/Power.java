@@ -3,16 +3,14 @@ package com.mythologyproject.mythology_project.models;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.List;
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @ToString
 @Entity
-@Table(name = "myths")
-public class Myths {
+@Table(name = "powers")
+public class Power {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,12 +19,14 @@ public class Myths {
 
     @ManyToOne
     @JoinColumn(name = "character_id", nullable = false)
-    private Characters character;
+    private Character character;
 
-    @Column(nullable = false)
-    private String name;
+    @ManyToOne
+    @JoinColumn(name = "power_name_id", nullable = false)
+    private PowerName powerName;
 
-    @Column(nullable = false)
-    private String description;
+    @ManyToOne
+    @JoinColumn(name = "power_type_id", nullable = false)
+    private PowerType powerType;
 
 }

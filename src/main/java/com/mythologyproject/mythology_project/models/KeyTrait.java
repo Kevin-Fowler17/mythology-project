@@ -3,16 +3,14 @@ package com.mythologyproject.mythology_project.models;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.List;
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @ToString
 @Entity
-@Table(name = "family_relations")
-public class FamilyRelations {
+@Table(name = "key_traits")
+public class KeyTrait {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,10 +19,9 @@ public class FamilyRelations {
 
     @ManyToOne
     @JoinColumn(name = "character_id", nullable = false)
-    private Characters character;
+    private Character character;
 
-    @ManyToOne
-    @JoinColumn(name = "related_character_id", nullable = false)
-    private FamilyRelationType familyRelationType;
+    @Column(nullable = false)
+    private String name;
 
 }

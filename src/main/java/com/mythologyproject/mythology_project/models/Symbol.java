@@ -3,8 +3,6 @@ package com.mythologyproject.mythology_project.models;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.List;
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -12,7 +10,7 @@ import java.util.List;
 @ToString
 @Entity
 @Table(name = "symbols")
-public class Symbols {
+public class Symbol {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +19,7 @@ public class Symbols {
 
     @ManyToOne
     @JoinColumn(name = "character_id", nullable = false)
-    private Characters character;
+    private Character character;
 
     @Column(nullable = false)
     private String name;
